@@ -4,6 +4,9 @@ pipeline {
         maven 'maven 3.3.9' 
         jdk 'jdk8' 
     }
+    environment {
+    	PATH = "C:\\Program Files\\Git\\usr\\bin;C:\\Program Files\\Git\\bin;${env.PATH}"
+    }
     stages {
         stage ('Initialize') {
             steps {
